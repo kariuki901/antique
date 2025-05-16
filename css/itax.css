@@ -1,0 +1,98 @@
+/* Small Hero for Subpages */
+.small-hero {
+  height: 50vh;
+  background: center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #1700eb;
+  text-align: center;
+}
+.small-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(9, 13, 250, 0.5);
+}
+.small-hero .content {
+  position: relative;
+  z-index: 2;
+}
+.small-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+.small-hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Projects Section (iTax) */
+.projects-section {
+  padding: 4rem 2rem;
+}
+.projects-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  color: #023E8A;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+.project-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+}
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.project-info {
+  padding: 1.2rem;
+}
+.project-info h4 {
+  font-size: 1.2rem;
+  color: #023E8A;
+  margin-bottom: 0.5rem;
+}
+.project-info p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  color: #444;
+}
+.project-meta {
+  font-size: 0.85rem;
+  color: #555;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.project-meta i {
+  color: #00b4d8;
+  margin-right: 4px;
+}
+.read-more-btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #00b4d8;
+  color: #fff;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+.read-more-btn:hover {
+  background: #0096c7;
+}
