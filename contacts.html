@@ -1,40 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact Us - The Antique</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- header -->
-   <!-- Header -->
+
+  <!-- Header -->
   <header>
-    <img src="logo.png" alt="The Antique Logo">
+    <img src="images/logo.png" alt="The Antique Logo" />
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="contacts.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
+  <!-- Contact Section -->
+  <section class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>We're here to help you! Reach out via the form or get in touch with one of our team members below.</p>
 
-  <section class="contact container">
-    <h1>Get in Touch</h1>
-    <form action="#" method="post">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="5" placeholder="How can we help?" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-    <p>Or reach us directly:<br>0702 037 492 | 0759 433 378<br>theeantique@gmail.com</p>
+      <div class="contact-grid">
+        <!-- Contact Form -->
+        <div class="form-box">
+          <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" rows="5" placeholder="How can we help you?" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Business Info -->
+        <div class="info-box">
+          <h3>Business Info</h3>
+          <p><strong>Phone:</strong> 0702 037 492 / 0759 433 378</p>
+          <p><strong>Email:</strong> theeantique@gmail.com</p>
+          <p><strong>Location:</strong> Shop p 19, pionner stall, utawala</p>
+          <p><strong>Hours:</strong><br>Mon - Fri: 8am – 6pm<br>Sat: 9am – 9pm</p>
+        </div>
+      </div>
+
+      <!-- Team Section -->
+      <h2>Our Team</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <img src="images/Kariuki.jpeg" alt="John Doe" />
+          <div class="member-info">
+            <h3>Ian Kariuki Njogo</h3>
+            <p>Graphics Designer</p>
+            <p>Email: theeantique@gmail.com</p>
+            <p>Phone: 0717 067 450</p>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img src="images/David.jpg" alt="Jane Wanjiku" />
+          <div class="member-info">
+            <h3>David ndungu kamaru</h3>
+            <p>Cyber Services</p>
+            <p>Email: theeantique@gmail.com</p>
+            <p>Phone: 0701 430 435</p>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img src="images/Kimani.jpg" alt="Mark Otieno" />
+          <div class="member-info">
+            <h3>George ndungu kimani</h3>
+            <p>Web Developer And Graphic Designer</p>
+            <p>Email: theeantique@gmail.com</p>
+            <p>Phone: 0707 165 508</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </section>
 
-  <!-- footer -->
-  <footer></footer>
+  <!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-info">
+      <h3>The Antique Graphics & Cyber</h3>
+      <p>Your one-stop shop for cyber services & branded printing in Kenya. Visit us for quality, speed, and creativity.</p>
+    </div>
+    <div class="footer-contact">
+      <h4>Contact Us</h4>
+      <p>Phone: 0702 037 492 | 0759 433 378</p>
+      <p>Email: theeantique@gmail.com</p>
+      <p>Location: Along Mugoiri Road, Murang’a</p>
+    </div>
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
+        <a href="#"><img src="images/Instagram.png" alt="Instagram" /></a>
+        <a href="#"><img src="whatsapp.svg" alt="WhatsApp" /></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 The Antique Graphics & Cyber. All rights reserved.</p>
+  </div>
+</footer>
+
+
 </body>
 </html>
