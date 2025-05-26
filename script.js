@@ -30,3 +30,63 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const testimonials = document.querySelectorAll(".testimonial");
+  const prevBtn = document.querySelector(".prev-btn");
+  const nextBtn = document.querySelector(".next-btn");
+  let currentIndex = 0;
+  const slideIntervalTime = 7000;
+  let slideInterval;
+
+  function showTestimonial(index) {
+    testimonials.forEach((t, i) => {
+      t.classList.toggle("active", i === index);
+    });
+  }
+
+  function nextTestimonial() {
+    currentIndex = (currentIndex + 1) % testimonials.length;
+    showTestimonial(currentIndex);
+  }
+
+  function prevTestimonialFunc() {
+    currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+    showTestimonial(currentIndex);
+  }
+
+  nextBtn.addEventListener("click", () => {
+    nextTestimonial();
+    resetInterval();
+  });
+
+  prevBtn.addEventListener("click", () => {
+    prevTestimonialFunc();
+    resetInterval();
+  });
+
+  function resetInterval() {
+    clearInterval(slideInterval);
+    slideInterval = setInterval(nextTestimonial, slideIntervalTime);
+  }
+
+  // Initialize
+  showTestimonial(currentIndex);
+  slideInterval = setInterval(nextTestimonial, slideIntervalTime);
+});

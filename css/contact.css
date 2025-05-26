@@ -1,0 +1,150 @@
+/* contact.css */
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+  color: #333;
+}
+
+h2, h3, h4 {
+  color: #222;
+}
+
+/* Header */
+header {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header img {
+  height: 60px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #0056b3;
+}
+
+/* Contact Section */
+.contact {
+  padding: 40px 20px;
+  background: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.form-box, .info-box {
+  flex: 1;
+  min-width: 280px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+form button {
+  background: #007bff;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form button:hover {
+  background: #0056b3;
+}
+
+/* Team Section */
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.team-member {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.team-member img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.member-info p {
+  margin: 5px 0;
+}
+
+/* Footer */
+.site-footer {
+  background: #001dbe;
+  color: #fff;
+  padding: 40px 20px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.footer-info, .footer-contact, .footer-social {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-social img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 14px;
+  border-top: 1px solid #444;
+}
